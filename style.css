@@ -1,81 +1,61 @@
 body {
-    font-family: 'Times New Roman', serif;
-    background-color: #f0f0f0;
-    color: #000;
     margin: 0;
-    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    overflow: hidden;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 0;
     text-align: center;
-    background-image: url('background.jpg'); /* Ajoutez le chemin de votre image de fond ici */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    z-index: 1000;
 }
 
-header {
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #fff;
-    padding: 20px 0;
-}
-
-header h1 {
-    margin: 0;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: #fff;
+.navbar a {
+    color: white;
+    padding: 14px 20px;
     text-decoration: none;
+    font-size: 18px;
 }
 
-section {
-    padding: 60px 0;
-}
-
-section h2 {
-    margin-bottom: 20px;
-}
-
-footer {
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #fff;
-    padding: 20px 0;
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .container {
-    width: 80%;
-    max-width: 800px;
-    margin: 0 auto;
+    display: flex;
+    height: 100vh;
 }
 
-form label {
-    display: block;
-    margin-top: 10px;
+.left-section, .right-section {
+    width: 50%;
+    position: relative;
 }
 
-form input, form textarea {
+video {
+    position: absolute;
     width: 100%;
-    padding: 10px;
-    margin-top: 5px;
+    height: 100%;
+    object-fit: cover;
 }
 
-form button {
-    background-color: #000;
-    color: #fff;
-    padding: 10px 20px;
+.btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
     border: none;
-    margin-top: 10px;
     cursor: pointer;
+    font-size: 24px;
+    text-transform: uppercase;
 }
 
-form button:hover {
-    background-color: #333;
+.btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
