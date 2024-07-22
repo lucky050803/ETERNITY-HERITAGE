@@ -1,0 +1,94 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#background-video {
+    position: fixed; /* Fixe la vidéo pour qu'elle reste en arrière-plan */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajuste la vidéo pour qu'elle couvre l'écran */
+    z-index: -1; /* Assure que la vidéo est derrière tous les autres éléments */
+}
+
+#background-music {
+    display: none; /* La musique de fond est cachée */
+}
+
+/* Styles pour le bandeau de navigation */
+.navbar {
+    position: fixed; /* Fixe la barre de navigation en haut */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Couleur de fond semi-transparente */
+    color: white;
+    padding: 10px 0;
+    z-index: 1; /* Assure que la barre de navigation est au-dessus de la vidéo */
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    margin: 0 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #f0f0f0;
+}
+
+/* Styles pour le contenu */
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1; /* Assure que le contenu est au-dessus de la vidéo */
+}
+
+h1 {
+    margin-bottom: 50px;
+    font-size: 4em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Améliore la lisibilité du texte */
+}
+
+.buttons {
+    display: flex;
+    justify-content: center; /* Centre les boutons */
+    gap: 20px; /* Espacement entre les boutons */
+}
+
+.btn {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 20px 40px;
+    text-decoration: none;
+    font-size: 1.5em;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
