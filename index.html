@@ -8,21 +8,62 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#eternity">ETERNITY</a></li>
-                <li><a href="#heritage">HERITAGE</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
         <div class="container">
             <h1>ETERNITY/HERITAGE</h1>
-            <div class="buttons">
-                <a href="#eternity" class="button">ETERNITY</a>
-                <a href="#heritage" class="button">HERITAGE</a>
-            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Accueil</a></li>
+                    <li><a href="#book">Le Livre</a></li>
+                    <li><a href="#universe">L'Univers</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-    </main>
+    </header>
+
+    <section id="home">
+        <div class="container">
+            <h2>Bienvenue sur ETERNITY/HERITAGE</h2>
+            <p>Découvrez le livre et son univers unique.</p>
+        </div>
+    </section>
+
+    <section id="book">
+        <div class="container">
+            <h2>Le Livre</h2>
+            <p>Description du livre et ses points forts.</p>
+        </div>
+    </section>
+
+    <section id="universe">
+        <div class="container">
+            <h2>L'Univers</h2>
+            <p>Plongez dans l'univers fascinant d'ETERNITY/HERITAGE.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <form action="#" method="post">
+                <label for="name">Nom:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 ETERNITY/HERITAGE. Tous droits réservés.</p>
+        </div>
+    </footer>
 </body>
 </html>
