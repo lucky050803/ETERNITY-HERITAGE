@@ -1,10 +1,9 @@
 body {
     margin: 0;
     font-family: 'Times New Roman', Times, serif;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
-    height: 100%;
+    min-height: 100vh;
 }
 
 .navbar {
@@ -70,10 +69,11 @@ video {
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 10px;
 }
 
 footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     background: rgba(0, 0, 0, 0.7);
